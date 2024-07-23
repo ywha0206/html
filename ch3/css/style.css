@@ -1,0 +1,131 @@
+
+
+h1{
+    color: #4A90E2;
+}
+
+header{
+    background-color: #F5F5F5;
+}
+
+span.highlight{
+    color: #F39C12;
+}
+
+nav a{
+    color: #E74C3C;
+}
+
+section.intro{
+    background-color: #e8f4f8;
+}
+
+.title{
+    color: #27ae60;
+}
+
+.article > p{
+    color: #9b59b6;
+}
+
+section{
+    border: 1px dashed #e74c3c;
+}
+
+footer a{
+    color: #34495e;
+}
+
+header li:first-child{
+    border: 1px solid #111;
+}
+
+header li:last-child{
+    border: 1px solid #111;
+}
+
+header > nav > ul > li{
+    background-color:  #d5dbdb;
+
+}
+ /* 15~16 */
+header > nav > ul > li:nth-child(1)>a{
+    color: #00f;
+    display: block;
+}
+header > nav > ul> li:nth-of-type(2)>a{
+    color: #0f0;
+    display: block;
+}
+
+/* 17 */
+body > section{
+    border: 1px solid #bdc3c7;
+}
+
+/* 18 */
+.content h2{
+    list-style-type: square;
+}
+
+
+/* 19 */
+header li{
+    list-style-type: square;
+}
+
+/* 20 */
+footer a:nth-of-type(1){
+    color: #27ae60;
+} 
+
+/* 21 */
+section:nth-child(2){
+    border: 2px dashed #16a085;
+}
+
+/* 22 */
+section:nth-child(3){
+    background-color: #bbe1ee;
+}
+
+/* 23 */
+p:nth-of-type(1){
+    color: #d35400;
+}
+
+/* 24 */
+p:nth-last-of-type(1){
+    font-style: italic;
+    color: #2980b9;
+}
+
+/* 25 */
+.title + p {
+    background-color: #e8f4f8;
+}
+
+/* 26 */
+.title~ *{
+    color: #8e44ad;
+}
+
+/* 27 */
+h2:first-of-type{
+    color: #e67e22;
+}
+
+/* 28 (2n+1) */
+ol li:nth-child(odd){
+    color: orange;
+}
+
+/* 29 */
+.intro:hover{
+    background-color: #e74c3c;
+}
+
+/* 30 */
+footer a:last-child::after{
+    content: 'ⓒ';
+}

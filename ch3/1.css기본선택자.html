@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 기본선택자</title>
+    <!-- 
+        날짜: 2024/07/23
+        이름: 박연화
+        내용: css 기본 선택자 실습하기
+    -->
+    <style>
+        /* 전체 선택자 */
+        *{
+            color: mediumpurple;
+        }
+
+
+        /* 태그 선택자 */
+        h3{
+            color: cornflowerblue;
+            background-color: pink;
+        }
+        
+        p{
+            border: 2px solid pink ;
+            border-radius: 10px;
+        }
+        
+        /* 클래스 선택자 */
+        .hello{
+            width: 70px;
+            color: mediumturquoise;
+        }
+        
+        
+        /* 아이디 선택자 */
+        #hello{
+            color: green;
+            border: 2px dotted gray;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h3>1. CSS 기본선택자</h3>
+
+    <p>Hello World</p>
+    <p class="hello">Hello World</p>
+    <p class="hello">Hello World</p>
+    <p id="hello">Hello World</p>
+
+
+</body>
+</html>
