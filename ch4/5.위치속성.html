@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>위치속성</title>
+    <!-- 
+        날짜: 2024/07/24
+        이름: 박연화
+        내용: 위치 속성 실습하기
+    -->
+    <style>
+        section{
+            display: inline-block;
+            width: 200px;
+            height: 400px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        section > div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        section > div:nth-of-type(1){background-color: red;}
+        section > div:nth-of-type(2){background-color: green;}
+        section > div:nth-of-type(3){background-color: blue;}
+
+        /* position static */
+        .s1 > div:nth-of-type(1){margin-left: 30px;}/*편법*/
+        .s1 > div:nth-of-type(2){}
+        .s1 > div:nth-of-type(3){}
+
+
+        /* position relative */
+        .s2 > div:nth-of-type(1){position: relative; left: 10px;}
+        .s2 > div:nth-of-type(2){position: relative; top: 10px;}
+        .s2 > div:nth-of-type(3){position: relative; top: 50px; left: 30px;}
+
+
+        /* position absolute */
+        .s3{position: relative;}
+
+        .s3 > div:nth-of-type(1){position: absolute; left:50px; top: 30px;}
+        .s3 > div:nth-of-type(2){position: absolute; top: 150px; left: 0;}
+        .s3 > div:nth-of-type(3){position: absolute; bottom: 0; left: 0;}
+
+        
+        /* position fixed */
+        .s4{position: relative;}
+
+        .s4 > div:nth-of-type(1){position: fixed; top: calc(50% - 50px); left: calc(50% - 50px);}
+        .s4 > div:nth-of-type(2){position: fixed; top: 0; left: 0;}
+        .s4 > div:nth-of-type(3){position: fixed; top: 80%; right: 100px;}
+
+
+
+    </style>
+</head>
+<body>
+    <h3>5. 위치속성</h3>
+
+    <h4>position</h4>
+    <section class="s1">
+        <span>static</span>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <section class="s2">
+        <span>relative</span>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <section class="s3">
+        <span>absolute</span>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <section class="s4">
+        <span>fixed</span>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+
+</body>
+</html>
