@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>연습문제</title>
+    <style>
+        article{
+            display: inline-block;
+        }
+        article > div{
+            width: 300px;
+            height: 300px;
+            border: 1px dashed black;
+        }
+        
+        /* 문제 1 */
+        .box1 > div{
+            width: 200px;
+            height: 200px;
+            float: right;
+            background-color: green;
+        }
+        
+        /* 문제 2 */
+        .box2{position: relative;}
+        .box2 > div{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        /* 문제 3 */
+        .box3 > div{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            float: right;
+            position: relative;
+        }
+        .box3 > div > div{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        /* 문제 4 */
+        .box4{position: relative;}
+        .box4 > div{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .box4 > div > div{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+
+        /* 문제 5 */
+        .box5{
+            /* display: flex;
+            justify-content: center; */
+            position: relative;
+        }
+        .box5 > div{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            /* position: absolute;
+            left: calc(50% - 100px);
+            top: 0; */
+           
+           /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+        .box5 > div > div{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /* position: absolute;
+            left: calc(50% - 50px);
+            top: 0; */
+        }
+
+        /* 문제 6 */
+        .box6{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box6 > div{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box6 > div > div{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+        .box > div > div{ width: 100px; height: 100px;}
+        .box > div >div:nth-child(1){background-color: red;}
+        .box > div >div:nth-child(2){background-color: green;}
+        .box > div >div:nth-child(3){background-color: blue;}
+        .box > div >div:nth-child(4){background-color: orange;}
+        .box > div >div:nth-child(5){background-color: pink;}
+        .box > div >div:nth-child(6){background-color: brown;}
+
+
+        /* 문제 7 */
+        .box7{position: relative;}
+        .box7 > div:nth-child(1){
+            position: absolute;
+            left: 100px;
+            top: 0;
+        }
+        .box7 > div:nth-child(2){
+            position: absolute;
+            top: 100px;
+            left: 0;
+        }
+        .box7 > div:nth-child(3){
+            position: absolute;
+            right: 0;
+            top: 100px;
+        }
+        .box7 > div:nth-child(4){
+            position: absolute;
+            right: 100px;
+            bottom: 0;
+        }
+    
+        /* 문제 8 */
+        .box8{position: relative;}
+        .box8 > div:nth-child(1){
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .box8 > div:nth-child(2){
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .box8 > div:nth-child(3){
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .box8 > div:nth-child(4){
+            position: absolute;
+            right: 100px;
+            bottom: 100px;
+        }
+        .box8 > div:nth-child(5){
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+
+        /* 문제 9 */
+        .box9 > div{
+            float: left;
+        }
+        .box9 > div:nth-child(4){
+            clear: left;
+        }
+        .box9 > div:nth-child(6){
+            clear: both;
+        }
+
+
+        /* 문제 10 */
+        .box10 > div{
+            float: right;
+        }
+        .box10 > div:nth-child(2){
+            clear: right;
+        }
+        .box10 > div:nth-child(4){
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>8. 연습문제</h3>
+    
+    <article>
+        <h4>1. 다음과 같이 배치하시오</h4>
+        <div class="box1">
+            <div></div>
+        </div>
+    </article>
+    <article>
+        <h4>2. 다음과 같이 배치하시오</h4>
+        <div class="box2">
+            <div></div>
+        </div>
+    </article>
+    <article>
+        <h4>3. 다음과 같이 배치하시오</h4>
+        <div class="box3">
+            <div>
+                <div></div>
+            </div>
+        </div>
+    </article>
+    <article>
+        <h4>4. 다음과 같이 배치하시오</h4>
+        <div class="box4">
+            <div>
+                <div></div>
+            </div>
+        </div>
+    </article>
+    <article>
+        <h4>5. 다음과 같이 배치하시오</h4>
+        <div class="box5">
+            <div>
+                <div></div>
+            </div>
+        </div>
+    </article>
+    <article>
+        <h4>6. 다음과 같이 배치하시오</h4>
+        <div class="box6">
+            <div>
+                <div></div>
+            </div>
+        </div>
+    </article>
+
+    <article class="box">
+        <h4>7. 다음과 같이 배치하시오</h4>
+        <div class="box7">
+            <div>red</div>
+            <div>green</div>
+            <div>blue</div>
+            <div>orange</div>
+        </div>
+    </article>
+    <article class="box">
+        <h4>8. 다음과 같이 배치하시오</h4>
+        <div class="box8">
+            <div>red</div>
+            <div>green</div>
+            <div>blue</div>
+            <div>orange</div>
+            <div>pink</div>
+        </div>
+    </article>
+    <article class="box">
+        <h4>9. 다음과 같이 배치하시오</h4>
+        <div class="box9">
+            <div>red</div>
+            <div>green</div>
+            <div>blue</div>
+            <div>orange</div>
+            <div>pink</div>
+            <div>brown</div>
+        </div>
+    </article>
+    <article class="box">
+        <h4>10. 다음과 같이 배치하시오</h4>
+        <div class="box10">
+            <div>red</div>
+            <div>green</div>
+            <div>blue</div>
+            <div>orange</div>
+            <div>pink</div>
+            <div>brown</div>
+        </div>
+    </article>
+
+
+
+</body>
+</html>
