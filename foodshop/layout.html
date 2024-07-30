@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FoodShop Layout</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        font: normal 12px '고딕';
+    }
+    ul,ol{ list-style: none; }
+    a{ text-decoration: none; color: #111; }
+    input, textarea{ outline: none;}
+
+    #wrapper{
+        width: 100%;
+        height: auto;   
+    }
+
+    /* header */
+    header{
+        width: 100%;
+        height: auto;
+    }
+    header>div{
+        width: 100%;
+        height: auto;
+        border: 1px solid gray;
+        box-sizing: border-box;
+    }
+    header>div>div{
+        width: 1100px;
+        height: 34px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    header>div>article{
+        width: 1100px;
+        height: 98px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    header>div>nav{
+        width: 1100px;
+        height: 52px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    /* main */
+    main{
+        width: 100%;
+        height: auto;
+    }
+    main>section{
+        width: 100%;
+        height: auto;
+        border: 1px solid gray;
+        box-sizing: border-box;
+    }
+    main>section>article{
+        margin: 0 auto;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+
+    .slider>article{
+        width: 1100px;
+        height: 350px;
+    }
+
+    .go>article{
+        width: 1100px;
+        height: 518px;
+        padding: 34px 0;
+    }
+    .go>article>div{
+        width: 322px;
+        height: 220px;
+        border: 1px solid blue;
+        box-sizing: border-box;
+        float: left;
+        margin-left: 10px;
+    }
+    .go>article>div:first-child{
+        width: 412px;
+        height: 450px;
+        border: 1px solid blue;
+        box-sizing: border-box;
+    }
+    .go>article>div:nth-child(4),div:nth-child(5){
+        margin-top: 10px;
+    }
+
+    .oneday>article{
+        width: 1100px;
+        height: 188px;
+    }
+    .vegetable>article{
+        width: 1100px;
+        height: 660px;
+    }
+    .vegetable li{
+        width: 25%;
+        height: 310px;
+        border: 1px solid blue;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    .premium>article{
+        width: 1100px;
+        height: 200px;
+    }
+    .seafood>article{
+        width: 1100px;
+        height: 660px;
+    }
+    .seafood li{
+        width: 25%;
+        height: 310px;
+        border: 1px solid blue;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    /* footer */
+    footer>div{
+        width: 100%;
+        height: auto;
+        border: 1px solid gray;
+        box-sizing: border-box;
+    }
+
+    footer>div>div{margin: 0 auto;}
+    footer>div:nth-child(1)>div{
+        width: 1100px;
+        height: 48px;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+    footer>div:nth-child(2)>div{
+        width: 1100px;
+        height: 154px;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div>
+                <div></div>
+            </div>
+            <div>
+                <article></article>
+            </div>
+            <div>
+                <nav></nav>
+            </div>
+        </header>
+        <main>
+            <section class="slider">
+                <article></article>
+            </section>
+            <section class="go">
+                <article>
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                </article>
+            </section>
+            <section class="oneday">
+                <article></article>
+            </section>
+            <section class="vegetable">
+                <article>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="premium">
+                <article></article>
+            </section>
+            <section class="seafood">
+                <article>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
